@@ -1,0 +1,22 @@
+RewriteEngine on
+
+#Protect - DOS
+LimitRequestBody 10000000
+
+#
+Options All -Indexes
+
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+ErrorDocument 403 "/public/error/404.php/"
+ErrorDocument 404 "/public/error/404.php/"
+ErrorDocument 406 "/public/error/404.php/"
+
+# Pages
+RewriteRule ^([a-zA-Z0-9-_]+)$ index.php?page=$1 [QSA,L]
