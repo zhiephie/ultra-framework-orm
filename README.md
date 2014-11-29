@@ -1,10 +1,16 @@
-ultra-framework-orm
+Ultra Framework ORM
 ===================
 
-Quick Start 
+#### Quick Start
 
+```sh
 git clone https://github.com/zhiephie/ultra-framework-orm.git
+```
 
-tutorial at : http://yudi-purwanto.com/show/detail/framework-ultra-framework-orm
+#### Tutorial at
+http://yudi-purwanto.com/show/detail/framework-ultra-framework-orm
 
 Ultra PHP Framework Versi ORM
+
+#### Licnse
+__MIT__
